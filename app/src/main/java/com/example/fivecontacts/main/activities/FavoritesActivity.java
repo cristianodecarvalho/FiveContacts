@@ -61,7 +61,9 @@ public class FavoritesActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 SharedPrefConfig.removeLoggedUserFromSharedPref(getApplicationContext());
-
+                User u = SharedPrefConfig.readLoggedUserFromSharedPref(getApplicationContext());
+                u.setKeepConnected(false);
+                SharedPrefConfig.writeLoggedUserInSharedPref( getApplicationContext(),u);
                 Intent i = new Intent(getApplicationContext(), LoginActivity.class);
                 startActivity(i);
                 finishAffinity();
