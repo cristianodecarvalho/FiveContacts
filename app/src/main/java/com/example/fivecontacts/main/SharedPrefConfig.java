@@ -6,7 +6,6 @@ import android.preference.PreferenceManager;
 import android.util.Log;
 
 import com.example.fivecontacts.main.model.Contact;
-import com.example.fivecontacts.main.model.Contato;
 import com.example.fivecontacts.main.model.User;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
