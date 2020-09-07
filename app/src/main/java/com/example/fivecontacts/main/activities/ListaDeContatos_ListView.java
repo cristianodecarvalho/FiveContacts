@@ -26,22 +26,7 @@ public class ListaDeContatos_ListView extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista_de_contatos);
 
-        lv= findViewById(R.id.listView1);
-        preencherListaDeContatos(); //Montagem do ListView
 
-        //Dados da Intent Anterior
-        Intent quemChamou=this.getIntent();
-        if (quemChamou!=null) {
-            Bundle params = quemChamou.getExtras();
-            if (params!=null) {
-                //Recuperando o Usuario
-                User u1 = (User) params.getSerializable("user");
-                if (u1 != null) {
-
-                    Log.v("pdm", u1.getNome());
-                }
-            }
-        }
 
     }
 

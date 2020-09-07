@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.fivecontacts">
 
+    <uses-permission android:name="android.permission.READ_CONTACTS"></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,18 +12,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".main.activities.NovoUsuario"></activity>
-        <activity android:name=".main.activities.Pick_Contacts"></activity>
-        <activity android:name=".main.activities.ListaDeContatos_ListView">
-        </activity>
-        <activity android:name=".main.activities.MainActivity">
+        <activity android:name=".main.activities.AddContactActivity"></activity>
+        <activity android:name=".main.activities.FavoritesActivity" />
+        <activity android:name=".main.activities.ProfileActivity" />
+        <activity android:name=".main.activities.ContactListActivity" />
+        <activity android:name=".main.activities.LoginActivity">
             <intent-filter>
-                <category android:name="android.intent.category.LAUNCHER" />
-
                 <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <activity android:name=".main.activities.SignUpActivity" />
     </application>
 
 </manifest>

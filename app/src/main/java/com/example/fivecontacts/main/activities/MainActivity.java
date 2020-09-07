@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        /*
         btLogar=findViewById(R.id.btLogar);
         btNovo=findViewById(R.id.btNovo);
         edUser=findViewById(R.id.edT_Login);
@@ -92,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
                     if ((loginSalvo.compareTo(login)==0)
                         &&(senhaSalva.compareTo(senha)==0)){
 
-                        User user = montarObjetoUser();
+
                         //Abrindo a Lista de Contatos
                         Intent intent = new Intent(MainActivity.this, ListaDeContatos_ListView.class);
                         intent.putExtra("usuario",user);
@@ -122,12 +123,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-   }
+         */
 
-    private User montarObjetoUser() {
-        User user=new User("Windson","","");
-        return user;
-    }
+   }
 
 
 }
