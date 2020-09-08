@@ -18,7 +18,7 @@
             android:text="Cristiano"
             android:textStyle="bold"
             android:textSize="20dp"
-            android:textColor="#EEEDEE"
+            android:textColor="#111"
             android:gravity="center_vertical"
             />
 
@@ -27,7 +27,7 @@
             android:layout_width="match_parent"
             android:layout_height="25dp"
             android:text="+55 85 9 89617267"
-            android:textColor="#d9d2d7"
+            android:textColor="#666"
             android:paddingStart="5dp"
             />
 

@@ -7,28 +7,58 @@
     android:layout_height="match_parent"
     tools:context=".main.activities.ProfileActivity">
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/bg_layer_gradient" />
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
     <TextView
-        android:id="@+id/tv_name"
+        android:id="@+id/tv_labelName"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="Cristiano de Carvalho"
+        android:text="Nome:"
         android:textSize="22dp"
         android:textStyle="bold"
-        android:textColor="#EEEDEE"
+        android:textColor="#111"
         android:gravity="center_vertical"
         android:layout_marginStart="18dp"
         android:layout_marginEnd="18dp"
         android:layout_marginTop="100dp"
+        android:layout_marginBottom="0dp"
+        android:paddingBottom="0dp"
         app:layout_constraintTop_toTopOf="parent"/>
+
+     <TextView
+         android:id="@+id/tv_name"
+         android:layout_width="match_parent"
+         android:layout_height="50dp"
+         android:text="Cristiano de Carvalho"
+         android:textSize="22dp"
+         android:textStyle="bold"
+         android:textColor="#666"
+         android:gravity="center_vertical"
+         android:layout_marginStart="18dp"
+         android:layout_marginEnd="18dp"
+         android:layout_marginTop="0dp"
+         android:layout_marginBottom="0dp"
+         android:paddingTop="0dp"
+         app:layout_constraintTop_toBottomOf="@id/tv_labelName"/>
+
+        <TextView
+            android:id="@+id/tv_labelUsername"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Usuário:"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textColor="#111"
+            android:gravity="center_vertical"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="0dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_name"/>
 
     <TextView
         android:id="@+id/tv_username"
@@ -37,12 +67,27 @@
         android:text="cristiano"
         android:textSize="22dp"
         android:textStyle="bold"
-        android:textColor="#EEEDEE"
+        android:textColor="#666"
         android:gravity="center_vertical"
         android:layout_marginStart="18dp"
         android:layout_marginEnd="18dp"
-        app:layout_constraintTop_toBottomOf="@id/tv_name"
+
+        app:layout_constraintTop_toBottomOf="@id/tv_labelUsername"
         />
+
+        <TextView
+            android:id="@+id/tv_labelEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Email:"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textColor="#111"
+            android:gravity="center_vertical"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_username"/>
 
     <TextView
         android:id="@+id/tv_email"
@@ -51,11 +96,11 @@
         android:text="cristianofilho@gmail.com"
         android:textSize="22dp"
         android:textStyle="bold"
-        android:textColor="#EEEDEE"
+        android:textColor="#666"
         android:gravity="center_vertical"
         android:layout_marginStart="18dp"
         android:layout_marginEnd="18dp"
-        app:layout_constraintTop_toBottomOf="@id/tv_username"
+        app:layout_constraintTop_toBottomOf="@id/tv_labelEmail"
         />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
